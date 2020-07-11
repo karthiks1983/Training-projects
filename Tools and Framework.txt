@@ -1,0 +1,120 @@
+Tools for Machine learning
+XL
+SQL
+Tableau
+PowerBi
+Apache Spark
+Python
+R programming
+Microstrategy
+SAS 
+SPSS
+Julia
+Jupyter
+MATlab
+
+Frameworks for DL
+- high computational resources
+GPU - graphical processing unit
+TPU - Tensor processing unit
+
+Frameworks:
+Tensorflow
+Pytorch
+Keras
+Caffe
+
+AI Tools:
+AutoML
+AutoKeras
+GCP
+IBM Watson
+Amazon Lex
+Data Robot
+H2o.ai - Driverless AI
+
+Team Collab:
+GitHub
+
+
+Techniques
+ML - Supervised /unsupervised / Reinforcement
+Supervised: Target variable available
+Unsupervised: Target variable undetermined
+
+Supervised:
+Target variable continuous
+Regression
+- simple Linear regression
+- multiple regression
+Otherwise
+Classification
+- Logistic regression
+- Decision tree
+- Random Forest
+
+unsupervised:
+Clustering
+- Create clusters / segment based on given data
+K- Means
+Spectra clustering
+
+Regression : Estimating the future value of continuous variable
+Classification : Probability of an event happening
+Clustering: Divide population to different subset by defined parameter
+Reinforcement: Learn to reach to an environment
+
+Application
+- time series forecasting - using historical data
+-- Linear Regression approach
+-- Moving Average
+-- ARIMA
+Others - Deep learning approach
+RNN
+LSTM
+
+- Click through Rate prediction
+-- Classification
+----Binary Classification
+----Logistic Regression
+Others:
+--Decision tree
+--Random Forest
+--Boosting learning
+
+- Applications of Online Learning
+- Recommendation system
+--Example : Stitch fix
+-- Content based recommendation system
+
+- conversational agent
+-- Understanding Intent through NLP technique
+-- Decision tree
+-- Gradient Boosted trees
+--- DL - RNN/LSTM/Bidirectional LSTM
+
+- NLP
+-- Text summarization
+-- Real time translation
+-- Sentiment Analysis
+-- Fake news detection'
+-- sentiments using customer feedback
+
+- Smart traffic light system
+-- CV task and DL (CNN - convolutional neural network)
+-- Separate larger task in to multiple smaller task
+
+- CV applicaiton
+-- face detection
+-- Self driving car
+-- Brain tumor detection usingMRI images
+-- Vehicle license plate scan at security checkpoint
+
+Skills required
+- Problem formulation and communication
+- Data extraction and validation
+- Data exploration and building data stories
+- Building predictive and forecast models
+- sharing model insights
+
+
