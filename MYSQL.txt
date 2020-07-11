@@ -1,0 +1,122 @@
+Create Index:
+--Create index Index_name on table (column_names separated by comma)
+
+Index types:
+name_composite
+
+How indexing works:
+-- B trees are involved
+-- review Data structure and algorithms
+-- why do we need Index
+--- faster search 
+--- Insert/Update time increases
+
+Relationship:
+-- Types
+--- 1 to 1
+---- primary key and uniqueness
+--- 1 to Many
+---- Foreign keys
+--- many to many
+---- separate table with foreign keys from both source tables
+
+Table Constraints
+-- Primary Key constraint
+-- Foreign Key constraint
+-- Uniqueness:
+--- disallows repetition of the field value
+-- Auto increment
+--- like a serial number
+
+String functions:
+
+upper case: ucase(columnname)
+lower case: lcase (columnname)
+concat - string function
+-- concat(column1, column2)
+
+Note: Select * from table limit #/G
+- for the columns to be one after the other for each row
+
+Trimming Strings:
+ltrim(), rtrim(), trim()
+
+Slicing:
+Extracting a substring from string
+-- left(columnname, numberofcharacters)
+--right(columnname, numberofcharacters)
+--substring(columnname, start, # ofcharacters)
+
+data and time:
+--now() - date and time together
+--curdate()
+--curtime()
+--unix_timestamp()
+
+--date(columnname)
+--time(columnname)
+--month()
+--year()
+--day()
+
+- find what is unix_timestamp
+- find how to convert numerical month to text
+- find week using day and month
+
+-- formatting date and time
+--- date_format(columnname, "specific format") - refer mysql documentation
+
+-- Numerical function
+--- round ()
+--- ceil()
+--- floor()
+--- truncate(expression or columname, number of decimal)
+--- abs() - make negative numbers as positive
+
+Importing data from CSV - LOAD
+DATA LOCAL INFILE <full_file_path>
+INTO TABLE <tableName>
+COLUMNS TERMINATED BY ',’
+OPTIONALLY ENCLOSED BY '” ESCAPED
+BY '"'
+LINES TERMINATED BY '\n’
+IGNORE 1 LINES;
+
+Exporting data to CSV - SELECT *
+INTO OUTFILE <outputFilePath>
+FIELDS TERMINATED BY ',' OPTIONALLY
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n' FROM
+<tableName>;
+
+Mysql from Python:
+
+Connecting to MysQL from python
+
+import mysql.connector
+db = mysql.connector.connect(host="", user ="", passwd="", database = "")
+
+Query the database connected
+mycursor = db.cursor()
+mycursor.execute(query)
+result = mycursor.fetchall()
+pprint(result) -- from ppprint import ppprit  required at the top to import pprint function
+-> result comes as list of Tuples
+
+--querying the database
+
+Create table
+-- define a variable for the Create query
+mycursor.execute(variable)
+
+- Refer to exceptions for commit function and error handling
+-- same as create table. 
+mycursor.execute(variable, values tuple)
+db.commit();
+ 	
+
+
+
+
+
+
